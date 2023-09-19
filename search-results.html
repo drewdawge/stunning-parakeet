@@ -3,24 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <title>Group Project 1</title>
+    <link rel="stylesheet" href="../stunning-parakeet/assets/css/style.css"/>
+    <title>Find Your Next Hike</title>
 </head>
 <body>
     <header>
-        <h1>Group Project 1</h1>
+        <h1>FIND YOUR NEXT HIKE</h1>
         <nav>
-            <button class id="button" link href="">Search</button>
-            <button class id="button" link href="">Favorites</button>
+            <a href=""><button class id="button" link href="url()">Search</button></a>
+            <a href=""><button class id="button" link href="">Favorites</button></a>
         </nav>
     </header>
-    <main> 
-           <h1>Group Project 1</h1>
-           <form>
-           </form>
-      </main>
-      <footer>
-        <h3>Brought to you by: Kevin Evers, Case Beaty, Helen Nguyen, and Andrew Walsh</h3>
+    <main>
+        <form>
+            <div class="">
+              <label for="userSearch" class="form-label" ></label>
+              <input type="text" class="form-control" id="userSearch" placeholder="Enter Your City, State, or Zip Code Here"> 
+            </div>
+            <button class id="button" type="submit">Submit</button>
+        </form>
+        <div class id="forecastCard"><h3>Here is the 36-Hour Forecast for your region:</h3></div>
+        <div class id="forecastResults"></div>
+        <div class id="hikeCard"><h3>Here are the top results for hikes in your region:</h3></div>
+        <div class id="hikeResults"></div>
+    </main>
+    <footer>
+        <h5>BROUGHT TO YOU BY: KEVIN EVERS, CASE BEATY, HELEN NGUYEN, & ANDREW WALSH</h5>
     </footer>
 </body>
 </html>
