@@ -15,20 +15,21 @@
         </nav>
     </header>
     <main>
-        <form>
-            <div class="">
-              <label for="userSearch" class="form-label" ></label>
-              <input type="text" class="form-control" id="userSearch" placeholder="Enter Your City, State, or Zip Code Here"> 
-            </div>
-            <button class id="button" type="submit">Submit</button>
-        </form>
-        <div class id="forecastCard"><h3>Here is the 36-Hour Forecast for your region:</h3></div>
-        <div class id="forecastResults"></div>
-        <div class id="hikeCard"><h3>Here are the top results for hikes in your region:</h3></div>
-        <div class id="hikeResults"></div>
+     <form>
+         <div class="">
+             <label for="userSearch" class="form-label" ></label>
+             <input class id="textInput" type="text" class="form-control" id="userSearch" placeholder="Enter Your City, State, or Zip Code Here"> 
+         </div>
+         <button class id="button" type="submit">Submit</button>
+     </form>
+     <div class="col-12 col-md-9 p-3 text-light">
+         <h2>Showing results for <span id="result-text"></span></h2>
+          <div id="result-content"></div>
+     </div>
     </main>
     <footer>
         <h5>BROUGHT TO YOU BY: KEVIN EVERS, CASE BEATY, HELEN NGUYEN, & ANDREW WALSH</h5>
     </footer>
+    <script src=""></script>
 </body>
 </html>
