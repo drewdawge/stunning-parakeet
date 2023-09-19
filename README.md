@@ -20,7 +20,7 @@ Public Github Repo:
 
 ## Project Requirements
 - You and your group will use everything you’ve learned over the past six modules to create a real-world front-end application that you’ll be able to showcase to potential employers. The user story and acceptance criteria will depend on the project that you create, but your project must fulfil the following requirements:
-- Use a CSS framework other than Bootstrap.
+- Use a CSS framework (Bootstrap IS allowed).
 - Be deployed to GitHub Pages.
 - Be interactive (i.e., accept and respond to user input).
 - Use at least two server-side APIs.
@@ -38,7 +38,6 @@ Project is created with:
 - HTML
 - CSS
 - VISUAL STUDIO CODE (VSC)
-- Boot Strap
 
 ## Screenshot
 
@@ -71,7 +70,7 @@ Download the repository
 - Kevin Evers
 - Case Beatty
 - Helen Nguyen
--Andrew Walsh
+- Andrew Walsh
 
 ## License
 
