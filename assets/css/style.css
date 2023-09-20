@@ -3,6 +3,7 @@
 }
 
 header {
+  top: 0;
   width: 100vw;
   height: 15vh;
   background: black;
@@ -15,6 +16,7 @@ header {
 }
 
 nav {
+  float: right;
   margin: 1%;
   height: 5vh;
   padding-right: 3%;
@@ -109,7 +111,7 @@ main {
   position: relative;
   width: 100vw;
   height: 65vh;
-  padding: 1rem;
+  margin: 1rem;
 }
 
 .search-results-card {
@@ -125,6 +127,7 @@ main {
   border: 1px solid black;
   height: 10vh;
   width: 85vw;
+  text-align: center;
 }
 
 .hikeCard {
@@ -133,6 +136,7 @@ main {
   border: 1px solid black;
   height: 10vh;
   width: 85vw;
+  text-align: center;
 }
 
 footer {
