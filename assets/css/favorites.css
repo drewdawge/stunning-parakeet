@@ -1,8 +1,79 @@
-body{
-    margin: 20px;;
-    padding: 20px;;
-    background-color: #DFDBCD;
-}
+:root {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  header {
+    width: 100vw;
+    height: 15vh;
+    background: black;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+  }
+  
+  nav {
+    margin: 1%;
+    height: 5vh;
+    padding-right: 3%;
+    background: black;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-align: center;
+    align-content: center;
+  }
+  
+  video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 90%;
+    height: 90%;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: black;
+    background-size: cover; 
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .viewport-header {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20vh;
+    font-size: 10vw;
+    letter-spacing: 1.3vw;
+    color: white;
+  }
+  
+  button {
+    height: 50px;
+    width: 100px;
+    background: rgb(44, 44, 44);
+    color: white;
+    margin: 1%;
+  }
+
 .title{text-align:center;
     padding: 10px 40px;
     margin: 20px auto;
@@ -33,6 +104,7 @@ body{
     justify-content: left;
     align-items: center;
     border: 3px solid black;
+    background: rgba(255, 255, 255, 0.502);
 }
 
 .row img{
@@ -86,6 +158,7 @@ body{
     flex-direction: column;
     align-items: center;
 }
+
 #pageheader {
     background-color: black;
     display: flex;
@@ -99,9 +172,29 @@ body{
     top: 0;
 }
 
+header h1 {
+    color: darkgray;
+    font-size: 1vw;
+    letter-spacing: 1vw;
+    padding-left: 1%;
+  }
+
 h1 {
     color: white;
-}
+    text-transform: uppercase;
+    letter-spacing: 3vw;
+    line-height: 1.2;
+    font-size: 3vw;
+    text-align: center;
+  }
+
+span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 10vw;
+    letter-spacing: -1.3vw;
+  }
 
 #pagefooter {
     position: absolute;
@@ -111,6 +204,7 @@ h1 {
     padding: 8px;
     width: calc(100vw - 16px);
 }
+
 #pagefooter > h3 {
     color: white;
     text-align: center;
