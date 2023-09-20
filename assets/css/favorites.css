@@ -47,6 +47,15 @@
     margin: 0;
   }
   
+  main {
+    background: rgba(black, 0.66);
+    color: white;
+    position: relative;
+    width: 100vw;
+    height: 65vh;
+    padding: 1rem;
+  }
+
   .viewport-header {
     position: relative;
     height: 100vh;
@@ -73,19 +82,113 @@
     color: white;
     margin: 1%;
   }
-  
-  button:hover {
-    box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.25), 0 17px 50px 0 rgba(0,0,0,0.19);
-  }
-  
-  header h1 {
+
+.title{text-align:center;
+    padding: 10px 40px;
+    margin: 20px auto;
+    width: 30%;
+    background-image: linear-gradient(to left, #555, #222);
+    border: 2px solid blue;
+    text-shadow: 0 0 2px blue;
+    border-radius: 20px;
+}
+
+.title:hover{
+    color: white;
+    box-shadow: 0 0 20px purple;
+    text-shadow: 0 0 5px green;
+}
+
+.favorites{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.row{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: 3px solid black;
+    background: rgba(255, 255, 255, 0.502);
+}
+
+.row img{
+    width: 86px;
+    height: 86px;
+    margin: 5px;
+    box-shadow: 0 0  20px white;
+    border-radius: 20px;
+}
+
+.row img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px blue;
+}
+
+.img{
+    width: 20px;
+    margin: 10px;
+    height: 20px;
+}
+
+.text{
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    font-size: 15px;
+    text-align: center;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+
+.listul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    width: 70vw;
+}
+.star {
+    position: absolute;
+    right: 15vw;
+}
+
+.Favorites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pageheader {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100vw - 16px);
+    padding: 8px;
+    align-self: flex-start;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+header h1 {
     color: darkgray;
     font-size: 1vw;
     letter-spacing: 1vw;
     padding-left: 1%;
   }
-  
-  h1 {
+
+h1 {
     color: white;
     text-transform: uppercase;
     letter-spacing: 3vw;
@@ -93,55 +196,14 @@
     font-size: 3vw;
     text-align: center;
   }
-  
-  span {
+
+span {
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 10vw;
     letter-spacing: -1.3vw;
   }
-  
-  main {
-    background: rgba(black, 0.66);
-    color: white;
-    position: relative;
-    width: 100vw;
-    height: 65vh;
-    padding: 1rem;
-  }
-  
-#forecastCard {
-    display: flex;
-    background: white;
-    color: black;
-    width: 75vw;
-    height: 10vh;
-}
-
-#forecastResults {
-    display: flex;
-    background: white;
-    color: black;
-    width: 75vw;
-    height: 10vh;
-}
-
-#hikeCard {
-    display: flex;
-    background: white;
-    color: black;
-    width: 75vw;
-    height: 10vh;
-}
-
-#hikeResults {
-    display: flex;
-    background: white;
-    color: black;
-    width: 75vw;
-    height: 10vh;
-}
 
   footer {
     display: flex;
