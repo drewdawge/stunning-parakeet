@@ -111,36 +111,12 @@
     padding: 1rem;
   }
   
-#forecastCard {
-    display: flex;
-    background: white;
-    color: black;
-    width: 75vw;
-    height: 10vh;
-}
-
-#forecastResults {
-    display: flex;
-    background: white;
-    color: black;
-    width: 75vw;
-    height: 10vh;
-}
-
-#hikeCard {
-    display: flex;
-    background: white;
-    color: black;
-    width: 75vw;
-    height: 10vh;
-}
-
-#hikeResults {
-    display: flex;
-    background: white;
-    color: black;
-    width: 75vw;
-    height: 10vh;
+.search-results-card {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  background: rgba(255, 255, 255, 0.492);
+  color: black;
 }
 
   footer {
