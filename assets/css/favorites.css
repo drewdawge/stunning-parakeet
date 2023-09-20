@@ -47,6 +47,15 @@
     margin: 0;
   }
   
+  main {
+    background: rgba(black, 0.66);
+    color: white;
+    position: relative;
+    width: 100vw;
+    height: 65vh;
+    padding: 1rem;
+  }
+
   .viewport-header {
     position: relative;
     height: 100vh;
@@ -196,16 +205,15 @@ span {
     letter-spacing: -1.3vw;
   }
 
-#pagefooter {
-    position: absolute;
-    left: 0;
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 5vh;
     background-color: black;
-    bottom: 0px;
-    padding: 8px;
-    width: calc(100vw - 16px);
-}
-
-#pagefooter > h3 {
-    color: white;
+    color: rgba(255, 255, 255, 0.477);
+    letter-spacing: 0.7vw;
     text-align: center;
-}
+    align-content: center;
+  }
