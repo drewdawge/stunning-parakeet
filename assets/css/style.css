@@ -3,6 +3,8 @@
 }
 
 header {
+  position: fixed;
+  z-index: 100;
   top: 0;
   width: 100vw;
   height: 15vh;
@@ -62,10 +64,16 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 20vh;
   font-size: 10vw;
   letter-spacing: 1.3vw;
   color: white;
+}
+
+.textEntry {
+  height: 25px;
+  width: 250px;
 }
 
 button {
@@ -73,7 +81,7 @@ button {
   width: 100px;
   background: rgb(44, 44, 44);
   color: white;
-  margin: 1%;
+  padding: 0.5%;
 }
 
 button:hover {
@@ -110,13 +118,16 @@ main {
   position: relative;
   width: 100vw;
   height: 65vh;
-  margin: 1rem;
+  margin-top: 20vh;
+  
 }
 
 .search-results-card {
   display: flex;
   flex-direction: row;
-  margin: 2%;
+  align-content: center;
+  margin-top: 15% !important;
+  margin: 3%;
   height: 65vh;
   width: 90vw;
   color: white;
@@ -172,6 +183,7 @@ main {
 .hikeBodyFooter {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 footer {

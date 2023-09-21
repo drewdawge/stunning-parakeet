@@ -3,6 +3,9 @@
   }
   
   header {
+    position: fixed;
+    z-index: 100;
+    top: 0;
     width: 100vw;
     height: 15vh;
     background: black;
@@ -53,7 +56,7 @@
     position: relative;
     width: 100vw;
     height: 65vh;
-    padding: 1rem;
+    margin-top: 20vh;
   }
 
   .viewport-header {
