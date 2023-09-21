@@ -1,4 +1,4 @@
-
+//gets the values from the search bar in the index.html
 function getParams() {
     var searchParams = document.location.search.split('?');
 
@@ -8,7 +8,7 @@ function getParams() {
 
 }
 
-
+//API used to find the trails and has inputs from the geocode API that converts the city name to coordinates
 function findTrails(lat, lon) {
     const url = 'https://trailapi-trailapi.p.rapidapi.com/trails/explore/?lat=' + lat + '&lon=' + lon + '&per_page=5&radius=10';
     const options = {
@@ -26,7 +26,7 @@ function findTrails(lat, lon) {
             console.log(data);
         })
 }
-
+//takes the query parameter from the getParams function to make the city name into coordinates
 function getCords(query) {
     var geocode = 'https://geocode.maps.co/search?q=' + query;
 
@@ -45,9 +45,8 @@ function getCords(query) {
 
 }
 
-// weather api stuffs
-
-function getWeather() {
+//takes in the query variable as well so that the weather for the searched city will also appear
+function getWeather(query) {
     var requestUrl = 'https://api.weatherapi.com/v1/forecast.json?key=4222cabb502a4d10b6d181735232009&q=Asheville&days=1&aqi=no&alerts=no';
 
     fetch(requestUrl)
@@ -58,7 +57,7 @@ function getWeather() {
             console.log(data);
         });
 }
-
+//makes the stars turn yellow when clicked
 const stars = document.getElementsByClassName("star")
 console.log("stars:", stars)
 
