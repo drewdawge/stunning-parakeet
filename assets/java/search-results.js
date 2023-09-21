@@ -31,6 +31,16 @@ fetch(geocode)
 //         console.log(data);
 //     })
 // }
+//weather api stuffs
+var requestUrl = 'https://api.weatherapi.com/v1/forecast.json?key=4222cabb502a4d10b6d181735232009&q=Asheville&days=1&aqi=no&alerts=no';
+
+fetch(requestUrl)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        console.log(data);
+    });
 
 
     const stars = document.getElementsByClassName("star")
