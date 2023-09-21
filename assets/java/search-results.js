@@ -14,6 +14,7 @@ fetch(url)
     .then(function (data) {
         console.log(data);
     })
+//weather api stuffs
 
 
     const stars = document.getElementsByClassName("star")
