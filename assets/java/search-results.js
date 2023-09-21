@@ -1,7 +1,8 @@
+var searchInputVal;
+getCords;
 
-
-function getCords() {
-    var geocode = ' https://geocode.maps.co/search?q=';
+function getCords(searchInputVal) {
+    var geocode = ' https://geocode.maps.co/search?q=' + searchInputVal;
 
 fetch(geocode)
     .then(function (response) {
