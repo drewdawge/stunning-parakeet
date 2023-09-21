@@ -10,7 +10,6 @@
 - [Deployment](#Deployment)
 - [Code Overview](#Code-Overview)
 - [Summary](#Summary)
-- [CSS style](#CSS-style)
 
 ## General-Info
 
@@ -55,13 +54,11 @@ Download the repository
 
 ## Code Overview
 
--
+- HTML:
+- CSS:
+- Java:
 
 ## Summary
-
-- 
-
-## CSS style
 
 - 
 
