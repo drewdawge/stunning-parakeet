@@ -1,3 +1,5 @@
+console.log("Hello World!")
+
 const stars = document.getElementsByClassName("star")
 console.log("stars:", stars)
 
