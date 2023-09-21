@@ -107,7 +107,6 @@ span {
 
 main {
   background: rgba(black, 0.66);
-  color: white;
   position: relative;
   width: 100vw;
   height: 65vh;
@@ -116,27 +115,63 @@ main {
 
 .search-results-card {
   display: flex;
-  flex-direction: column;
-  margin: 5%;
-  color: black;
+  flex-direction: row;
+  margin: 2%;
+  height: 65vh;
+  width: 90vw;
+  color: white;
 }
 
 .weatherCard {
-  margin: 3%;
-  background: rgba(255, 255, 255, 0.492);
+  margin: 1%;
+  background: rgba(0, 0, 0, 0.8);
   border: 1px solid black;
-  height: 10vh;
-  width: 85vw;
+  border-radius: 10%;
+  padding: 2%;
+  height: 65vh;
+  width: 25vw;
   text-align: center;
 }
 
+.weatherPicture {
+  background-image: url(../images/weather.jpg);
+  height: 55vh;
+  width: 25vw;
+}
+
+.hikeCardContainer {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+}
+
 .hikeCard {
-  margin: 2%;
-  background: rgba(255, 255, 255, 0.492);
-  border: 1px solid black;
-  height: 10vh;
-  width: 85vw;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  margin: 1%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: left;
+  border-radius: 5%;
+}
+
+.hikeHeaderPicture {
+  display: flex;
+  flex-direction: column;
+}
+
+.hikePicture {
+  background-image: url(../images/hike.jpg);
+  margin: 10px;
+  min-height: 100px;
+  max-height: 100px;
+  min-width: 100px;
+  max-width: 100px;
+}
+
+.hikeBodyFooter {
+  display: flex;
+  flex-direction: column;
 }
 
 footer {
