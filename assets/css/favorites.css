@@ -3,30 +3,6 @@ body{
     padding: 20px;;
     background-color: #DFDBCD;
 }
-.title{text-align:center;
-    padding: 10px 40px;
-    margin: 20px auto;
-    width: 30%;
-    background-image: linear-gradient(to left, #555, #222);
-    border: 2px solid blue;
-    text-shadow: 0 0 2px blue;
-    border-radius: 20px;
-}
-
-.title:hover{
-    color: white;
-    box-shadow: 0 0 20px purple;
-    text-shadow: 0 0 5px green;
-}
-
-.favorites{
-    width: 90%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px auto;
-}
 
 .row{
     display: flex;
@@ -45,7 +21,7 @@ body{
 
 .row img:hover{
     transform: scale(1.1);
-    box-shadow: 0 0 20px blue;
+    box-shadow: 0 0 20px whitesmoke;
 }
 
 .img{
