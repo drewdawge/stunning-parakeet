@@ -23,6 +23,11 @@ fetch(requestUrl)
     })
     .then(function (data) {
         console.log(data);
+
+        console.log(data.location.name);
+        console.log(data.current.condition.code)
+
+  
     });
 
 
