@@ -114,6 +114,9 @@ span {
 }
 
 main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   background: rgba(black, 0.66);
   position: relative;
   width: 100vw;
@@ -122,68 +125,20 @@ main {
   
 }
 
-.search-results-card {
+.weatherContainer {
   display: flex;
-  flex-direction: row;
-  align-content: center;
-  margin-top: 15% !important;
-  margin: 3%;
-  height: 65vh;
-  width: 90vw;
-  color: white;
+  height: 50vh;
+  width: 30vw;
+  background-color: white;
+  color: black;
 }
 
-.weatherCard {
-  margin: 1%;
-  background: rgba(0, 0, 0, 0.8);
-  border: 1px solid black;
-  border-radius: 10%;
-  padding: 2%;
-  height: 65vh;
-  width: 25vw;
-  text-align: center;
-}
-
-.weatherPicture {
-  background-image: url(../images/weather.jpg);
-  height: 55vh;
-  width: 25vw;
-}
-
-.hikeCardContainer {
+.trailContainer {
   display: flex;
-  flex-direction: column;
-  width: 60vw;
-}
-
-.hikeCard {
-  display: flex;
-  flex-direction: row;
-  margin: 1%;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.8);
-  text-align: left;
-  border-radius: 5%;
-}
-
-.hikeHeaderPicture {
-  display: flex;
-  flex-direction: column;
-}
-
-.hikePicture {
-  background-image: url(../images/hike.jpg);
-  margin: 10px;
-  min-height: 100px;
-  max-height: 100px;
-  min-width: 100px;
-  max-width: 100px;
-}
-
-.hikeBodyFooter {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  height: 50vh;
+  width: 30vw;
+  background-color: white;
+  color: black;
 }
 
 footer {
