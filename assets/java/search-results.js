@@ -10,6 +10,7 @@ fetch(geocode)
     .then(function (data) {
         console.log(data);
     })
+<<<<<<< HEAD
 }
 
 
@@ -31,6 +32,9 @@ fetch(geocode)
 //         console.log(data);
 //     })
 // }
+=======
+//weather api stuffs
+>>>>>>> main
 
 
     const stars = document.getElementsByClassName("star")

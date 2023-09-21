@@ -1,6 +1,7 @@
 var searchButton = document.querySelector('#button');
 var searchFormEl = document.querySelector('#search-form');
 
+<<<<<<< HEAD
 function handleSubmit(event) {
     event.preventDefault();
 
@@ -33,3 +34,16 @@ searchFormEl.addEventListener('submit', handleSubmit);
 //         console.log(data);
 //     })
 // }
+=======
+for (const star of stars) {
+    star.addEventListener('click', (event) => {
+        console.log('star clicked')
+        // toggle fill color
+        if (event.target.style.fill === "yellow") {
+            event.target.style.fill = "none"
+        } else {
+            event.target.style.fill = "yellow"
+        }
+    })
+}
+>>>>>>> main
