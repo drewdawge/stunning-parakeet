@@ -1,14 +1,25 @@
-const stars = document.getElementsByClassName("star")
-console.log("stars:", stars)
+var searchButton = document.querySelector('#button');
+var searchFormEl = document.querySelector('#search-form');
 
-for (const star of stars) {
-    star.addEventListener('click', (event) => {
-        console.log('star clicked')
-        // toggle fill color
-        if (event.target.style.fill === "yellow") {
-            event.target.style.fill = "none"
-        } else {
-            event.target.style.fill = "yellow"
-        }
-    })
+function handleSubmit(event) {
+    event.preventDefault();
+
+    var searhInputVal = document.querySelector('#userSearch').value;
+
+    if (!searhInputVal) {
+        console.error('You need a search input!');
+        return;
+    }
+
+    var queryString = './search-results.html?q=' + searhInputVal;
+
+    location.assign(queryString);
+
 }
+
+searchFormEl.addEventListener('submit', handleSubmit);
+
+
+
+
+
