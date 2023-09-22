@@ -1,4 +1,3 @@
-
 function getParams() {
     var searchParams = document.location.search.split('?');
 
