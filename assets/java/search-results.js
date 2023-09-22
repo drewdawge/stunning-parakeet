@@ -4,12 +4,12 @@ function getParams() {
 
     var query = searchParams[1].split('=').pop();
 
-    getCords(query);
+    getCoords(query);
 
 }
 
 
-function findTrails(lat, lon) {
+async function findTrails(lat, lon) {
     const url = 'https://trailapi-trailapi.p.rapidapi.com/trails/explore/?lat=' + lat + '&lon=' + lon + '&per_page=5&radius=10';
     const options = {
         method: 'GET',
@@ -27,7 +27,7 @@ function findTrails(lat, lon) {
         })
 }
 
-function getCords(query) {
+async function getCoords(query) {
     var geocode = 'https://geocode.maps.co/search?q=' + query;
 
     fetch(geocode)
@@ -47,7 +47,7 @@ function getCords(query) {
 
 // weather api stuffs
 
-function getWeather() {
+async function getWeather() {
     var requestUrl = 'https://api.weatherapi.com/v1/forecast.json?key=4222cabb502a4d10b6d181735232009&q=Asheville&days=1&aqi=no&alerts=no';
 
     fetch(requestUrl)
