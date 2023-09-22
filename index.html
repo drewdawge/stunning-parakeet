@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../stunning-parakeet/assets/css/style.css"/>
     <title>HikeFindr: Home</title>
+    <script src="../stunning-parakeet/assets/java/script.js" defer></script>
+    <script src="../stunning-parakeet/assets/java/search-results.js" defer></script>
 </head>
 <body>
     <header>
@@ -19,20 +21,19 @@
         <source src="../stunning-parakeet/assets/video/background.MOV" type="video/mp4">
     </video>
     <main> 
-      <span>
-         <h1>FIND YOUR NEXT HIKE</h1>
-         <form id="search-form">
-               <div class="search-wrapper">
-                 <label for="userSearch" class="form-label" ></label>
-                 <input type="text" class="textEntry" id="userSearch" placeholder="Enter Your City, State, or Zip Code Here"> 
+        <span>
+            <h1>FIND YOUR NEXT HIKE</h1>
+            <form id="search-form" onsubmit="getCoords(document.getElementById('userSearch').value); return false;">
+                <div class="search-wrapper">
+                    <label for="userSearch" class="form-label" ></label>
+                    <input type="text" class="textEntry" id="userSearch" placeholder="Enter Your City, State, or Zip Code Here">
                 </div>
                 <button class id="button" type="submit"> S e a r c h </button>
-         </form>
-      </span>
+            </form>
+        </span>
     </main>
     <footer>
         <h5>BROUGHT TO YOU BY: KEVIN EVERS, CASE BEATY, HELEN NGUYEN, & ANDREW WALSH</h5>
     </footer>
-    <script src="../stunning-parakeet/assets/java/script.js"></script>
 </body>
 </html>

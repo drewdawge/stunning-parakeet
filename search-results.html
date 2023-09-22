@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../stunning-parakeet/assets/css/style.css"/>
-    <title>HikeFindr: Search Results</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../stunning-parakeet/assets/css/style.css"/>
+  <link rel="stylesheet" href="./assets/css/search.css" />
+  <link rel="stylesheet" href="./assets/css/favorites.css" />
+  <script src="./assets/java/search-results.js" defer></script>
+  <title>HikeFindr: Search Results</title>
 </head>
 <body>
     <header>
@@ -20,29 +23,19 @@
     </video>
     <main>
       <div class="weatherContainer">
-        <div class="column">Insert Weather Here</div>
-        <div class="column"></div>
+        <img alt="weather" id="weathericon" src="" />
+        <div class="column" id="location"></div>
+        <div class="column" id="temperature"></div>
+        <div class="column" id="condition"></div>
+        <div class="column" id="humidity"></div>
+        <div class="column" id="uvindex"></div>
       </div>
       <div class="trailContainer">
-        <div class="column">
-          <div class="row">
-            Insert Trail Here
-          </div>
-          <div class="row">
-            Insert Trail Here
-          </div>
-          <div class="row">
-            Insert Trail Here
-          </div>
-          <div class="row">
-            Insert Trail Here
-          </div>
-          <div class="row">
-            Insert Trail Here
-          </div>
-        </div>
+      <div class="Favorites">
+        <ul class="listul">
+        </ul>
+      </div> 
       </div>
     </main>
-    <script src="../stunning-parakeet/assets/java/search-results.js"></script>
 </body>
 </html>
