@@ -1,20 +1,15 @@
-var trailResults = document.querySelector('#trail-results');
-
-//gets the values from the search bar in the index.html
 function getParams() {
     var searchParams = document.location.search.split('?');
 
     var query = searchParams[1].split('=').pop();
 
-    getCords(query);
+    getCoords(query);
 
 }
 
 
-
-//API used to find the trails and has inputs from the geocode API that converts the city name to coordinates
-function findTrails(lat, lon) {
-    const url = 'https://trailapi-trailapi.p.rapidapi.com/trails/explore/?lat=' + lat + '&lon=' + lon + '&per_page=5&radius=10';
+async function findTrails(lat, lon) {
+    const url = 'https://trailapi-trailapi.p.rapidapi.com/trails/explore/?lat=' + lat + '&lon=' + lon + '&page=1&&per_page=5&radius=10';
     const options = {
         method: 'GET',
         headers: {
@@ -28,11 +23,13 @@ function findTrails(lat, lon) {
             return response.json();
         })
         .then(function (data) {
-            console.log(data);
+            console.log("trails:", data);
+            return data;
         })
 }
 
-function getCords(query) {
+async function getCoords(query) {
+    console.log("query called:", query)
     var geocode = 'https://geocode.maps.co/search?q=' + query;
 
     fetch(geocode)
@@ -108,8 +105,8 @@ function getCords(query) {
 
 // weather api stuffs
 
-function getWeather(query) {
-    var requestUrl = 'https://api.weatherapi.com/v1/forecast.json?key=4222cabb502a4d10b6d181735232009&q=' + query + '&days=1&aqi=no&alerts=no';
+async function getWeather(lat, long) {
+    var requestUrl = `https://api.weatherapi.com/v1/forecast.json?key=4222cabb502a4d10b6d181735232009&q=${lat},${long}&days=1&aqi=no&alerts=no`;
 
     return fetch(requestUrl)
         .then((res) => res.json())
@@ -118,7 +115,7 @@ function getWeather(query) {
             return data;
         }); 
 }
-//makes the stars turn yellow when clicked
+
 const stars = document.getElementsByClassName("star")
 console.log("stars:", stars)
 
