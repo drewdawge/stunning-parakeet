@@ -6,7 +6,7 @@ function getParams() {
 
     var query = searchParams[1].split('=').pop();
 
-    getCoords(query);
+    getCords(query);
 
 }
 
@@ -108,8 +108,8 @@ function getCords(query) {
 
 // weather api stuffs
 
-function getWeather() {
-    var requestUrl = 'https://api.weatherapi.com/v1/forecast.json?key=4222cabb502a4d10b6d181735232009&q=Asheville&days=1&aqi=no&alerts=no';
+function getWeather(query) {
+    var requestUrl = 'https://api.weatherapi.com/v1/forecast.json?key=4222cabb502a4d10b6d181735232009&q=' + query + '&days=1&aqi=no&alerts=no';
 
     return fetch(requestUrl)
         .then((res) => res.json())
