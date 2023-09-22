@@ -127,8 +127,11 @@ main {
 }
 
 .weatherContainer {
-  height: 50vh;
-  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30vh;
+  width: 20vw;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   border: 3px solid rgb(100, 100, 100);
@@ -137,8 +140,12 @@ main {
 }
 
 .trailContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 50vh;
-  width: 30vw;
+  width: 50vw;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   border: 3px solid rgb(100, 100, 100);
