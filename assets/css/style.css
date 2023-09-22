@@ -116,7 +116,8 @@ span {
 main {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-content: center;
   background: rgba(black, 0.66);
   position: relative;
   width: 100vw;
@@ -126,19 +127,23 @@ main {
 }
 
 .weatherContainer {
-  display: flex;
   height: 50vh;
   width: 30vw;
-  background-color: white;
-  color: black;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border: 3px solid rgb(100, 100, 100);
+  margin-top: 2%;
+  padding: 3%;
 }
 
 .trailContainer {
-  display: flex;
   height: 50vh;
   width: 30vw;
-  background-color: white;
-  color: black;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border: 3px solid rgb(100, 100, 100);
+  margin-top: 2%;
+  padding: 3%;
 }
 
 footer {
