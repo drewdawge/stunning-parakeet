@@ -33,8 +33,7 @@ fetch(geocode)
 //     })
 // }
 //weather api stuffs
-var requestUrl = 'https://api.weatherapi.com/v1/forecast.json?key=4222cabb502a4d10b6d181735232009&q=Asheville&days=1&aqi=no&alerts=no';
-
+var requestUrl = 'http://api.openweathermap.org/geo/1.0/direct?q=Asheville&limit=5&appid=ef87c1ec9f4540d56a36e0c0bdc9e5cf'
 fetch(requestUrl)
     .then(function (response) {
         return response.json();
@@ -42,8 +41,8 @@ fetch(requestUrl)
     .then(function (data) {
         console.log(data);
 
-        console.log(data.location.name);
-        console.log(data.current.condition.code)
+       // console.log(data.location.name);
+       // console.log(data.current.condition.code)
 
   
     });
