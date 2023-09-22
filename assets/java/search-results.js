@@ -1,16 +1,11 @@
-var searchInputVal;
-getCords;
 
-function getCords(searchInputVal) {
-    var geocode = ' https://geocode.maps.co/search?q=' + searchInputVal;
+function getParams() {
+    var searchParams = document.location.search.split('?');
 
-fetch(geocode)
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (data) {
-        console.log(data);
-    })
+    var query = searchParams[1].split('=').pop();
+
+    getCords(query);
+
 }
 
 
@@ -61,4 +56,56 @@ fetch(requestUrl)
                 event.target.style.fill = "yellow"
             }
         })
-    }
+        .then(function (data) {
+            console.log(data);
+        })
+}
+
+function getCords(query) {
+    var geocode = 'https://geocode.maps.co/search?q=' + query;
+
+    fetch(geocode)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            console.log(data);
+            var lat = data[0].lat;
+            var lon = data[0].lon;
+            findTrails(lat, lon);
+        });
+
+
+
+}
+
+// weather api stuffs
+
+function getWeather() {
+    var requestUrl = 'https://api.weatherapi.com/v1/forecast.json?key=4222cabb502a4d10b6d181735232009&q=Asheville&days=1&aqi=no&alerts=no';
+
+    fetch(requestUrl)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            console.log(data);
+        });
+}
+
+const stars = document.getElementsByClassName("star")
+console.log("stars:", stars)
+
+for (const star of stars) {
+    star.addEventListener('click', (event) => {
+        console.log('star clicked')
+        // toggle fill color
+        if (event.target.style.fill === "yellow") {
+            event.target.style.fill = "none"
+        } else {
+            event.target.style.fill = "yellow"
+        }
+    })
+}
+
+getParams();
