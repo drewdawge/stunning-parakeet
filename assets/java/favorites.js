@@ -1,16 +1,19 @@
-console.log("Hello World!")
-
 const stars = document.getElementsByClassName("star")
 console.log("stars:", stars)
 
 for (const star of stars) {
-    star.addEventListener('click', (event) => {
-        console.log('star clicked')
+    star.style.fill = localStorage.getItem(star.id)
+    star.addEventListener('click', async () => {
+        console.log('star clicked on', star.id)
+        const starid = star.id
         // toggle fill color
-        if (event.target.style.fill === "yellow") {
-            event.target.style.fill = "none"
+        console.log("color:", window.getComputedStyle(star).getPropertyValue('fill'))
+        if (window.getComputedStyle(star).getPropertyValue('fill')  === "rgb(255, 255, 0)") {
+            star.style.fill = "none"
+            localStorage.setItem(starid, "none")
         } else {
-            event.target.style.fill = "yellow"
+            star.style.fill = "rgb(255, 255, 0)"
+            localStorage.setItem(starid, "rgb(255, 255, 0)")
         }
     })
 }
