@@ -47,7 +47,7 @@ function getCords(query) {
             document.getElementById('location').textContent = weather.location.name;
             document.getElementById('temperature').textContent = `${weather.current.temp_f} ℉`;
             document.getElementById('condition').textContent = weather.current.condition.text;
-            document.getElementById('humidity').textContent = `${weather.current.humidity}%`;
+            document.getElementById('humidity').textContent = `Humidity: ${weather.current.humidity}%`;
             document.getElementById('uvindex').textContent = `UV Index: ${weather.current.uv}`;
 
             // edit trails
