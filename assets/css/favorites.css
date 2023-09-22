@@ -140,7 +140,7 @@
 
 .text{
     width: 100px;
-    height: 100px;
+    height: 100%;
     justify-content: center;
     font-size: 15px;
     text-align: center;
