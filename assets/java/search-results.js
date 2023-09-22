@@ -1,3 +1,5 @@
+var trailResults = document.querySelector('#trail-results');
+
 //gets the values from the search bar in the index.html
 function getParams() {
     var searchParams = document.location.search.split('?');
@@ -5,6 +7,46 @@ function getParams() {
     var query = searchParams[1].split('=').pop();
 
     getCords(query);
+
+}
+
+function printResults(dataObj) {
+    console.log(dataObj);
+
+    var resultCard = document.createElement('div');
+  resultCard.classList.add('card', 'bg-light', 'text-dark', 'mb-3', 'p-3');
+
+  var resultBody = document.createElement('div');
+  resultBody.classList.add('card-body');
+  resultCard.append(resultBody);
+
+  var titleEl = document.createElement('h3');
+  titleEl.textContent = dataObj.name;
+
+  var bodyContentEl = document.createElement('p');
+  bodyContentEl.innerHTML =
+  '<strong>length:</strong>' + dataObj.length + '<br/>';
+
+  if (data.description) {
+    bodyContentEl.innerHTML +=
+    '<strong>Description:</strong>' + dataObj.description + '<br/>';
+  } else {
+    bodyContentEl.innerHTML +=
+    '<strong>Description:</strong> No description is given';
+  }
+
+  if (data.directions) {
+    bodyContentEl.innerHTML +=
+    '<strong>Directions:</strong>' + dataObj.directions;
+  } else {
+    bodyContentEl.innerHTML +=
+    '<strong>Directions:</strong> Directions are not given.'
+  }
+
+  resultBody.append(titleEl, bodyContentEl);
+
+  trailResults.append(resultCard);
+    
 
 }
 
@@ -24,6 +66,10 @@ function findTrails(lat, lon) {
         })
         .then(function (data) {
             console.log(data);
+
+            for (var i = 0; i < data.length; i++) {
+                printResults(data[i]);
+            }
         })
 }
 //takes the query parameter from the getParams function to make the city name into coordinates
