@@ -31,7 +31,7 @@ for (var i = 0; i < searchArray.length; i++) {
     searchItemsEl.appendChild(li);
 }
 }
-
+// runs on page load
 function init() {
     var storedHistory = JSON.parse(localStorage.getItem("searchHistory"));
 
@@ -41,11 +41,11 @@ function init() {
 
     renderHistory();
 }
-
+// stores to local storage
 function storeSearch() {
     localStorage.setItem("searchHistory", JSON.stringify(searchArray));
 }
-
+// captures the click of the search button
 searchFormEl.addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -59,7 +59,7 @@ searchFormEl.addEventListener('submit', function(event) {
     var queryString = './search-results.html?q=' + searchInputVal;
 
     location.assign(queryString);
-    
+    // pushes input to the array
     searchArray.push(searchInputVal);
 
     storeSearch();
@@ -67,10 +67,10 @@ searchFormEl.addEventListener('submit', function(event) {
 
 
 });
-
+// captured click for the remove button
 searchItemsEl.addEventListener("click", function(event) {
     var element = event.target;
-
+    // if you click on the button it splices choice from array
     if (element.matches("button") === true) {
         var index = element.parentElement.getAttribute("data-index");
         searchArray.splice(index, 1);
