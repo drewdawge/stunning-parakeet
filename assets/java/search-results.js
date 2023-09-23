@@ -1,8 +1,9 @@
-
 function getParams() {
     var searchParams = document.location.search.split('?');
+    
 
     var query = searchParams[1].split('=').pop();
+    
 
     getCoords(query);
 
@@ -103,6 +104,7 @@ async function getCoords(query) {
             return { weather, trails }
         });
 }
+
 
 // weather api stuffs
 

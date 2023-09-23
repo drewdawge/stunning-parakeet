@@ -102,15 +102,6 @@ button {
   text-shadow: 0 0 5px green;
 }
 
-.favorites{
-  width: 90%;
-  height: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 50px auto;
-}
-
 .row{
   display: flex;
   justify-content: left;
