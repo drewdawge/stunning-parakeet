@@ -130,13 +130,14 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 30vh;
+  height: 40vh;
   width: 20vw;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   border: 3px solid rgb(100, 100, 100);
   margin-top: 4.5%;
   padding: 3%;
+  text-align: center;
 }
 
 .trailContainer {
@@ -157,18 +158,18 @@ main {
   background: rgba(0, 0, 0, 0.8);
   border: 3px solid rgb(100, 100, 100);
   color: white;
+  padding: 0px;
 }
 
 .listul img {
-  height: 40vh;
-  width: 40vw;
+  width: 55%;
 }
 
 .listul li {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   padding: 3%;
+  column-gap: 1vw;
 }
 
 footer {
@@ -183,4 +184,27 @@ footer {
   text-align: center;
   align-content: center;
   margin: 1%;
+}
+.linkel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.star {
+  position: absolute;
+  right: 11%;
+}
+#namecontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2vh;
+  max-width: 35%;
+}
+#forecast {
+  display: flex;
+  column-gap: 2vw;
+  align-items: center;
+  justify-content: center;
 }
