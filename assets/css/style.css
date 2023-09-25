@@ -60,6 +60,27 @@ body {
   justify-content: center;
 }
 
+#search-history {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 10%;
+  padding: 1%;
+}
+
+#search-history button {
+  height: 30px;
+  width: 70px;
+  background: rgb(44, 44, 44);
+  color: white;
+  padding: 0.5%;
+}
+
+#search-items {
+  
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -123,7 +144,6 @@ main {
   width: 100vw;
   height: 65vh;
   margin-top: 20vh;
-  
 }
 
 .weatherContainer {
