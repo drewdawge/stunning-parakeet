@@ -11,40 +11,6 @@ var searchInput = document.querySelector('#userSearch');
 
 var searchArray = [];
 
-// this function will render the search history into list items 
-function renderHistory() {
-// clears search items element
-searchItemsEl.innerHTML = "";
-
-// render a new li for each history element
-for (var i = 0; i < searchArray.length; i++) {
-    var list = searchArray[i];
-
-    var li = document.createElement('li');
-    li.textContent = list;
-    li.setAttribute("data-index", i);
-
-    var button = document.createElement("button");
-    button.textContent = "Remove";
-
-    li.appendChild(button);
-    searchItemsEl.appendChild(li);
-}
-}
-// runs on page load
-function init() {
-    var storedHistory = JSON.parse(localStorage.getItem("searchHistory"));
-
-    if (storedHistory !== null) {
-        searchArray = storedHistory;
-    }
-
-    renderHistory();
-}
-// stores to local storage
-function storeSearch() {
-    localStorage.setItem("searchHistory", JSON.stringify(searchArray));
-}
 // captures the click of the search button
 searchFormEl.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -59,25 +25,6 @@ searchFormEl.addEventListener('submit', function(event) {
     var queryString = './search-results.html?q=' + searchInputVal;
 
     location.assign(queryString);
-    // pushes input to the array
-    searchArray.push(searchInputVal);
-
-    storeSearch();
-    renderHistory();
-
 
 });
-// captured click for the remove button
-searchItemsEl.addEventListener("click", function(event) {
-    var element = event.target;
-    // if you click on the button it splices choice from array
-    if (element.matches("button") === true) {
-        var index = element.parentElement.getAttribute("data-index");
-        searchArray.splice(index, 1);
 
-        storeSearch();
-        renderHistory();
-    }
-});
-
-init();
