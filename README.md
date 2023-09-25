@@ -56,7 +56,7 @@ Download the repository
 
 - HTML:
 - CSS:
-- Java: Weather API and Forecast display on search results, 
+- Java: Weather API used to display both current weather conditions and a three day forecast for the input location.
 
 ## Summary
 
