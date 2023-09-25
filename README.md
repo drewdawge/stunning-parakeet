@@ -40,7 +40,7 @@ Project is created with:
 
 ## Screenshot
 
-![Alt text](<Screenshot 2023-09-25 at 9.39.52 AM (2)-1.png>)
+![Alt text](<./assets/images/Screenshot.png>)
 
 ## Deployment
 
