@@ -108,6 +108,7 @@ button {
   align-items: center;
   border: 3px solid black;
   background: rgba(255, 255, 255, 0.502);
+  padding: 3px;
 }
 
 .row img{
@@ -131,17 +132,13 @@ button {
 
 .text{
   width: 100px;
-  height: 100%;
-  justify-content: center;
   font-size: 15px;
   text-align: center;
-  background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
-  
+  color: black;
 }
 
 .listul {
