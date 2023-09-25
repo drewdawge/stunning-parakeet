@@ -79,7 +79,11 @@ async function getCoords(query) {
                 link.href = trails.data[i].url;
                 link.target = '_blank';
                 const trailimg = document.createElement('img');
-                trailimg.src = trails.data[i].thumbnail;
+                if (trails.data[i].thumbnail === null) {
+                    trailimg.src = "./assets/images/background.jpeg";
+                } else {
+                    trailimg.src = trails.data[i].thumbnail;
+                };
                 trailimg.alt = trails.data[i].name;
                 const traildesc = document.createElement('div');
                 traildesc.textContent = trails.data[i].description;
