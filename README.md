@@ -54,13 +54,13 @@ Download the repository
 
 ## Code Overview
 
-- HTML:
-- CSS:
+- HTML: The HTML was kept as simple as possible utilizing semantic structure when applicable. Titles, headers, and footers were kept unifrom throughout to ensure that all pages have a similar feel.
+- CSS: The CSS styling was completed without the use of Bootstrap or any other outside services. The goal was to keep the CSS styling simple, efficent, and visually pleasing. The use of a video background gives the application a high-quality and inspiring feel.
 - Java: We used a Weather API to display both current weather conditions and a three day forecast for the input location. We also used a Trail Finder API to give 5 examples of trails in the given location. Lastly we added a Geocoding API to make the users input into coordinates for the other APIs to use. 
 
 ## Summary
 
-- 
+- Our goal was to create an application that; Recieved a users inputed location, returned weather results for that location, converted the location term into lat/long coordinates and returned top trail results for the given location. We were able to accomplish this goal by working as a team to divide the responsibilities and remain in communication about each of our progress. Ultimately, the product was a visually pleasing and polished UI, a Javascript Code that integrates not two but three API’s, a local storage feature with the addition of the “Favorites” section, and an overall succesfully deployed application and accompanying public Github Repository.
 
 ## Authors
 
