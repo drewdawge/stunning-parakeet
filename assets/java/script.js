@@ -81,8 +81,3 @@ searchItemsEl.addEventListener("click", function(event) {
 });
 
 init();
-
-
-
-
-
