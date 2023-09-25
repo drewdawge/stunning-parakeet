@@ -40,7 +40,7 @@ Project is created with:
 
 ## Screenshot
 
-![Alt text](<./assets/images/Screenshot.png>)
+![Alt text](<stunning-parakeet/assets/images/Screenshot.png>)
 
 ## Deployment
 
