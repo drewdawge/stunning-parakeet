@@ -13,9 +13,9 @@
 
 ## General-Info
 
-Deployed link:
+Deployed link: https://drewdawge.github.io/stunning-parakeet/
 
-Public Github Repo:
+Public Github Repo: https://github.com/drewdawge/stunning-parakeet/
 
 ## Project Requirements
 - You and your group will use everything you’ve learned over the past six modules to create a real-world front-end application that you’ll be able to showcase to potential employers. The user story and acceptance criteria will depend on the project that you create, but your project must fulfil the following requirements:
@@ -40,7 +40,7 @@ Project is created with:
 
 ## Screenshot
 
-INSERT SCREESHOT HERE
+![Alt text](<Screenshot 2023-09-25 at 9.39.52 AM (2)-1.png>)
 
 ## Deployment
 
