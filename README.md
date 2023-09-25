@@ -56,7 +56,7 @@ Download the repository
 
 - HTML:
 - CSS:
-- Java: Weather API used to display both current weather conditions and a three day forecast for the input location.
+- Java: We used a Weather API to display both current weather conditions and a three day forecast for the input location. We also used a Trail Finder API to give 5 examples of trails in the given location. Lastly we added a Geocoding API to make the users input into coordinates for the other APIs to use. 
 
 ## Summary
 
