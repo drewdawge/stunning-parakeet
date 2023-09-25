@@ -40,7 +40,8 @@ Project is created with:
 
 ## Screenshot
 
-![Alt text](<Screenshot 2023-09-25 at 9.39.52 AM (2)-1.png>)
+![Alt text](https://github.com/drewdawge/stunning-parakeet/assets/142940568/fe684a10-365f-4f68-8e15-2be7c385cb61)
+
 
 ## Deployment
 
