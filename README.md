@@ -56,7 +56,7 @@ Download the repository
 
 - HTML:
 - CSS:
-- Java:
+- Java: Weather API and Forecast display on search results, 
 
 ## Summary
 
